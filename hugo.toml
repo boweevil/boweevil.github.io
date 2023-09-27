@@ -1,0 +1,91 @@
+baseURL = 'https://jasoncarpenter.me/'
+title = 'Jason Carpenter'
+theme = 'risotto'
+languageCode = 'en-us'
+DefaultContentLanguage = "en"
+
+[params.theme]
+palette = "gruvbox-dark"
+
+[params.about]
+title = "Hello World!"
+description = "I'm just a nerdy guy who loves tech, music, movies/tv, & Coffee."
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:jason@jasoncarpenter.me"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/boweevil"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-gitlab"
+title = "GitLab"
+url = "https://gitlab.com/boweevil"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-linkedin"
+title = "LinkedIn"
+url = "https://linkedin.com/in/jason-carpenter-57ab24188"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "https://jasoncarpenter.me/cv"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
