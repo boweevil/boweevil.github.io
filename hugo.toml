@@ -9,7 +9,7 @@ palette = "gruvbox-dark"
 
 [params.about]
 title = "Hello World!"
-description = "I'm just a nerdy guy who loves tech, music, movies/tv, & Coffee."
+description = "I'm just a nerdy guy who loves tech, music, movies/TV, & coffee."
 
 [[params.socialLinks]]
 icon = "fa-solid fa-envelope"
