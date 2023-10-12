@@ -1,91 +1,82 @@
-baseURL = 'https://jasoncarpenter.me/'
-title = 'Jason Carpenter'
-theme = 'risotto'
-languageCode = 'en-us'
-DefaultContentLanguage = "en"
+baseurl      = "https://jasoncarpenter.me"
+title        = "Jason Carpenter"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
 
-[params.theme]
-palette = "gruvbox-dark"
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-[params.about]
-title = "Hello World!"
-description = "I'm just a nerdy guy who loves tech, music, movies/TV, & coffee."
+  # Subtitle for home
+  homeSubtitle = "DevOps Engineer"
 
-[[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "mailto:jason@jasoncarpenter.me"
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
 
-[[params.socialLinks]]
-icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/boweevil"
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = true
 
-[[params.socialLinks]]
-icon = "fa-brands fa-gitlab"
-title = "GitLab"
-url = "https://gitlab.com/boweevil"
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
 
-[[params.socialLinks]]
-icon = "fa-brands fa-linkedin"
-title = "LinkedIn"
-url = "https://linkedin.com/in/jason-carpenter-57ab24188"
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
-[menu]
+[languages]
+  [languages.en]
+    title = "Jason Carpenter"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
 
+  [languages.en.params]
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.en.params.logo]
+      logoText = "hello world"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
 
   [[menu.main]]
     identifier = "cv"
-    name = "CV"
-    url = "https://jasoncarpenter.me/cv"
-    weight = 10
+    name       = "CV"
+    url        = "/cv"
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+[[params.social]]
+  name = "email"
+  url = "mailto:jason@jasoncarpenter.me"
 
-# For hugo >= 0.60.0, enable inline HTML
-[markup.goldmark.renderer]
-unsafe = true
+[[params.social]]
+  name = "github"
+  url = "https://github.com/boweevil"
 
-[markup]
+[[params.social]]
+  name = "gitlab"
+  url = "https://gitlab.com/boweevil"
 
-  # Table of contents
-  # Add toc = true to content front matter to enable
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel   = 3
-    ordered    = true
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/jason-phillip-carpenter/"
 
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
+[[params.social]]
+  name = "youtube"
+  url = "https://youtube.com/@linuxdork"
