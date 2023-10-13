@@ -3,8 +3,8 @@ title   = "Jason Carpenter"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
+# PygmentsCodeFences = true
+# PygmentsStyle = "monokai"
 
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
@@ -41,11 +41,6 @@ disableHugoGeneratorInject = false
 
 [blackfriday]
   hrefTargetBlank = true
-
-[taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -193,6 +188,10 @@ disableHugoGeneratorInject = false
 
 [menu]
   [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
+  [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "about/"
@@ -204,8 +203,4 @@ disableHugoGeneratorInject = false
     identifier = "toolbox"
     name       = "Toolbox"
     url        = "/toolbox"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
 
