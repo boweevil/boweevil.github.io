@@ -174,10 +174,6 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/jason-phillip-carpenter/"
-  
-  [[params.social]]
-    name = "youtube"
-    url = "https://youtube.com/@linuxdork"
 
 [languages]
   [languages.en]
